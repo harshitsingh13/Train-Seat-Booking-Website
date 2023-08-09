@@ -1,9 +1,14 @@
 {
+  "homepage": "https://harshitsingh13.github.io/Train-Seat-Booking-Website",
   "name": "nodejs-exercise-7",
   "version": "1.0.0",
   "description": "nodejs exercise-7",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
