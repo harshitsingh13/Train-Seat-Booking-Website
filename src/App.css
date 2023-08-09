@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+.main{
+	background: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+	margin-top: 25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.available {
+	width: 40px;
+	height: 40px;
+	background-color: #12ec12;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 10px;
+	border-radius: 5px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .booked {
+	width: 40px;
+	height: 40px;
+	background-color: #ec1212;
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-left: 50px;
+	border-radius: 5px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container-row {
+    display: flex;
+	flex-direction: column;
+}
+
+.seat-info{
+	margin-top: 35px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.exit-gate-1{
+	width: 600px;
+	height: 150px;
+	background-color: #d6e0d6;
+	margin-top: 30px;
+	margin-left: 150px;
+	border-radius: 5px;
+}
+
+.exit-gate-2{
+	width: 600px;
+	height: 150px;
+	background-color: #d6e0d6;
+	margin-top: 30px;
+	margin-left: 150px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+}
+
+.seat-alignment{
+	margin-top: 35px;
+	margin-left: 60px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.seat-alignment-last{
+	margin-top: 35px;
+	margin-left: 385px;
+	font-weight: bold;
+	font-size: 30px;
+}
+.seat1{
+	width: 70px;
+	height: 70px;
+	margin-left: 175px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #12ec12;
+}
+
+.seat2{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #12ec12;
+}
+
+.seat3{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #12ec12;
+}
+
+.seat4{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #12ec12;
+}
+
+.seat5{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #12ec12;
+}
+
+.seat6{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #12ec12;
+}
+
+.seat7{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #12ec12;
+}
+
+.page-background{
+	background-image: url('./img/Background_photo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 770px;
+	width: 1200px;
+}
+
+.book-ticket-background{
+	background-color: #E6E6FA;
+	width: 500px;
+	height: 770px;
+}
+
+.book-ticket{
+	background-color: white;
+	width: 400px;
+	height: 600px;
+	text-align: center;
+	margin: auto;
+	margin-top: 70px;
+}
+
+.welcome-heading{
+	padding: 30px;
+}
+
+.input-label{
+	margin-top: 80px;
+}
+.Seats-Input{
+	width: 250px;
+	height: 50px;
+	margin-top: 20px;
+	border-color: #1E90FF;
+	border-radius: 5px;
+}
+
+.book-btn{
+	width: 250px;
+	height: 50px;
+	margin-top: 30px;
+	background-color: #1E90FF;
+	color: white;
+	font-size: 20px;
+	border-color: #1E90FF;
+	border-radius: 5px;
 }
