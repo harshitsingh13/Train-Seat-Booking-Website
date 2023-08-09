@@ -124,7 +124,7 @@ app.post('/getBookingDetails', (req, res) => {
 				console.log(results);
 
 				//Storing seats data in JSON that will use in displaying updated arrangements
-				fs.writeFile("data.json", JSON.stringify(results), (error) => {
+				fs.appendFile("data.json", JSON.stringify(results), (error) => {
 					// throwing the error
 					// in case of a writing problem
 					if (error) {

@@ -1,10 +1,4 @@
 import React, {useState} from "react";
-import { useNavigate } from 'react-router-dom';
-
-const seatChart = require("./seatChart.json");
-
-var NoOfSeats = 0; // variable to store number of tracking booking status
-var arrange = ""; // Variable to store sllocated seat numbers
 
 export default function BookTicket() {
 
@@ -52,10 +46,6 @@ export default function BookTicket() {
 			alert("Please enter valid seat numbers (1 to 7)");
 		}
 		else {
-			
-			//Storing input of user
-			NoOfSeats = Seats;
-			
 			try{
 				fetchBookings(); //Calling aysnc function for making bookings
 			}
@@ -63,7 +53,6 @@ export default function BookTicket() {
 			catch(err){
 				alert("It seems we're facing some techninal issue. Meanwhile your booking is completed successfully.")
 			}
-			 
 		}
 	}
 	
@@ -86,11 +75,7 @@ export default function BookTicket() {
 		
 		</div>	
 		
-	
 		</>
 
 	)
-
-
-
 }

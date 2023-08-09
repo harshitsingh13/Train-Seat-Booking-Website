@@ -3,6 +3,9 @@ import React from "react";
 //Importing updated seats status
 const seatsData = require("./data.json");
 
+//Importing initial booking arrangements
+const initialSeats = require("./Initial bootking chart.json");
+
 //Arrays to store each row data of seats
 const row1 = []
 const row2 = []
@@ -23,8 +26,9 @@ export default function ShowBookings() {
 
     for(let i = 1; i <= 80; i++){
 		
-		let color = "";
-        seatsData[i-1].IsBooked == true ? color = "#ec1212" : color = "#12ec12"; // Changing color to green for vaccant seats and red to booked seats
+		let color = ""; //Storing seat color - Green OR Red
+		
+        seatsData.filter(function(o) { return o.SeatNo == initialSeats[i-1].seatNo })[0].IsBooked == true ? color = "#ec1212" : color = "#12ec12"; // Changing seat color to green for vaccant seats and red to booked seats
 
 		//Storing each row seats data Row(1 to 7 seats)
         if(i<=7 && row1.length < 7)
